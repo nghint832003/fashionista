@@ -1,5 +1,5 @@
 <?php
-function insert_comment($id_customer, $id_product, $content_comment, $date_comment);
+function insert_comment($id_customer, $id_product, $content_comment, $date_comment)
 {
     $sql = "insert into comments(id_customer, id_product, content_comment, date_comment) values('$id_customer','$id_product','$content_comment','$date_comment')";
     pdo_execute($sql);
