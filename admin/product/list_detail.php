@@ -18,6 +18,7 @@
                 foreach($listProductDetail as $ProductDetail){
                     extract($ProductDetail);
                     $updateProductDetail="index.php?act=loadProductDetail&id_pd=".$id_pd;
+                    $deleteProductDetail="index.php?act=deleteProductDetail&id_pd=".$id_pd;
 //                    $deleteCategory="index.php?act=deleteCategory&id_category=".$id_category;
                     echo '<tr>
                                 <th scope="row">'.$id_pd.'</th>
@@ -26,7 +27,7 @@
                                 <td>'.$color_product.'</td>                                                       
                                 <td>'.$size_product.'</td>                                                       
                                 <td>'.$quantity_product.'</td>                                                                                                                                           
-                                <td><a href="'.$updateProductDetail.'"><input type="button" value="Sửa"></a> <a href=""><input type="button" value="Xóa"></a></td>
+                                <td><a href="'.$updateProductDetail.'"><input type="button" value="Sửa"></a> <a href="'.$deleteProductDetail.'"><input type="button" value="Xóa"></a></td>
                               </tr>';
                 }
                 ?>

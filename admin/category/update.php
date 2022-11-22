@@ -50,7 +50,7 @@ if(is_array($category)){
         </div>
         <div class="form-group">
             <div class="col-md-4">
-                <input type="submit" name="updateCate" value="Cập nhật">
+                <input onclick="myFunction()" type="submit" name="updateCate" value="Cập nhật">
                 <input type="reset" value="Nhập lại">
             </div>
         </div>
@@ -61,3 +61,8 @@ if(is_array($category)){
 
 </form>
 </div>
+<script>
+    function myFunction() {
+        confirm("Bạn có chắc là muốn cập nhật không");
+    }
+</script>

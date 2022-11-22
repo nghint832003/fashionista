@@ -42,14 +42,32 @@
         </div>
         <div class="form-group">
             <div class="col-md-4">
-                <input type="submit" name="addCate" value="Thêm mới">
+                <input class="add" type="submit" name="addCate" value="Thêm mới">
                 <input type="reset" value="Nhập lại">
             </div>
         </div>
-        <?php
-            if(isset($thongbao)&&($thongbao!="")) echo $thongbao;
-        ?>
+<!--        --><?php
+//            if(isset($thongbao)&&($thongbao!="")) echo $thongbao;
+//        ?>
     </div>
-
+    <script>
+        $('.add').click( ()=>
+        {
+            Swal.fire({
+                title: 'Do you want to save the changes?',
+                showDenyButton: true,
+                showCancelButton: true,
+                confirmButtonText: 'Save',
+                denyButtonText: `Don't save`,
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    Swal.fire('Saved!', '', 'success')
+                } else if (result.isDenied) {
+                    Swal.fire('Changes are not saved', '', 'info')
+                }
+            })
+        })
+    </script>
 </form>
 </div>

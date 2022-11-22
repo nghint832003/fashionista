@@ -21,9 +21,9 @@ function delete_product($id)
     pdo_query($sql1);
 }
 
-function delete_products_detail($id_product)
+function delete_products_detail($id_pd)
 {
-    $sql = "delete from product_detail where id_product=" . $id_product;
+    $sql = "delete from product_detail where id_pd=" . $id_pd;
     pdo_query($sql);
 }
 

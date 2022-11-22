@@ -1,33 +1,3 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <title>Admin</title>-->
-<!--    <link rel="stylesheet" href="../view/css/style.css">-->
-<!--    <style>-->
-<!--        .menu{-->
-<!--            height: 30px;-->
-<!--        }-->
-<!--    </style>-->
-<!--</head>-->
-<!--<body>-->
-<!--<div class="container">-->
-<!--    <div class="row mb headeradmin">-->
-<!--        <h1>ADMIN</h1>-->
-<!--    </div>-->
-<!--    <div class="row mb menu">-->
-<!--        <ul>-->
-<!--            <li><a href="index.php">Trang chủ</a></li>-->
-<!--            <li><a href="../admin/index.php?act=addCategory">Loại sản phẩm</a></li>-->
-<!--            <li><a href="index.php?act=addsp">Sản phẩm</a></li>-->
-<!--            <li><a href="index.php?act=dskh">Khách hàng</a></li>-->
-<!--            <li><a href="index.php?act=dsbl">Bình luận</a></li>-->
-<!--            <li><a href="index.php?act=thongke">Thống kê</a></li>-->
-<!--        </ul>-->
-<!--    </div>-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,7 +19,10 @@
 
     <!-- Custom styles for this template-->
     <link href="../../fashinista/admin/css/adminStyle.css" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body id="page-top">

@@ -232,9 +232,20 @@ if (isset($_GET['act'])) {
                     } else{
                         update_product_detail($id_pd,$id_product,$color_product,$size_product,$quantity_product);
                         $thongbao = "Cập nhật thành công";
+                        echo "<script>alert('Sửa thành công !');</script>";
+
                     }
                 }
-                include 'product/list_detail.php';
+                $listProduct = loadall_product();
+                include 'product/list.php';
+                break;
+
+            case 'deleteProductDetail':
+                if(isset($_GET['id_pd'])){
+                    delete_products_detail($_GET['id_pd']);
+                }
+                $listProduct = loadall_product();
+                include 'product/list.php';
                 break;
             case 'listCustomer':
                 $listCustomer = loadall_account();
