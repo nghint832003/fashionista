@@ -1,0 +1,47 @@
+.sanpham_left{float: left;width: 55%;margin-bottom: 200px;height: 950px;}
+/* .sanpham_left_top{height: 680px;} */
+.sanpham_left_top img{width: 100%;height: 898px;}
+.sanpham_left_bottom{display: grid;grid-template-columns: repeat(4,1fr);gap: 10px;}
+.sanpham_left_bottom img{cursor: pointer;width: 100%;height: 200px;}
+.sanpham_left_bottom>img:hover{border: 1px solid gray;}
+
+.sanpham_right{float: right;width: 43%;border: 1px solid rgb(225, 225, 225);height: 1105px;padding: 20px;position: relative;}
+.sanpham_right_textstar h2{font-size: 45px;color: #333333;margin-top: 0px;}
+.sanpham_right_star{margin-top: -20px;font-size: 20px;color: rgb(231, 61, 61);}
+.sanpham_right_price{background-color: #ededed;padding: 3px 20px;margin: 20px -20px 20px -20px;}
+.sanpham_right_price h2{color: #ff1900;}
+.sanpham_right_main{height: 450px;margin-bottom: 10px;}
+.sanpham_right_bottom{background-color: #ededed;height: 400px;position: absolute;bottom: 0;right: 0;left: 0;padding: 20px;}
+.sanpham_right_main_text01,.sanpham_right_bottom_color_text{display: flex;align-items: center;margin-bottom: -20px;}
+.sanpham_right_bottom_color_button button{border: 1px solid rgb(123, 123, 123);background-color: #FFFFFF;padding: 10px 15px; color: #333333;font-size: 15px;border-radius: 5px;transition: 0.4s;margin-top: 15px;}
+.sanpham_right_main_text01 h2,.sanpham_right_bottom_color_text h2{color:#333333;width: 40%;}
+.sanpham_right_main_text01 p,.sanpham_right_bottom_color_text p{color:#6d6767;font-size: 20px;;width: 80%;}
+.sanpham_right_bottom_dathang_dathang_nek{background-color: #cc3726;text-align: center;width: 100%;height: 70px;line-height: 5px;color: #e0dede;font-variant: small-caps;font-family: times new roman;transition: 0.9s;}
+.sanpham_right_bottom_dathang_dathang_nek:hover{background-color: #f03723;color: #FFFFFF;}
+.sanpham_right_bottom_dathang_dathang_nek h2{padding-top: 20px;}
+.sanpham_right_bottom_dathang_dathang_nekk{width: 100%;height: 50%;border: 1px solid rgb(93, 93, 93);line-height: 20px;text-align: center;margin-top: 15px;color: #555555;}
+/*  */
+.cothethick{clear: both;}
+.text1{border-bottom: 5px solid red;width: 262px;padding-bottom: 5px;}
+/*  */
+.spnew{display: grid;grid-template-columns: repeat(5,1fr);gap: 20px;}
+.sp01{text-align: center;border-bottom: 2px solid red;border-radius: 10px;padding-bottom: 10px;}
+.imgnek{overflow: hidden;height: 305px;}
+.sp01 img{width: 100%;transition: 0.4s;}
+.sp01 img:hover{transform:scale(1.5);}
+.sp01>h3{color: red;margin: -10px 0 10px 0;}
+a{text-decoration: none;}
+.sp01 h2{text-align: center;color: black;}
+.sp01>button{cursor: pointer;border-radius: 20px;padding:7px 15px;border: none;color: #FFFFFF;background-color: #2281ed;}
+.binhluan{margin-top: 20px;margin-bottom: 700px;}
+.conment{background-color: rgb(228, 221, 221);}
+.conment_header{display: flex;gap: 10px;margin: 20px;padding: 10px;}
+.avatar>img{width: 50px;height: 50px;border-radius: 100px;}
+.name h2{font-size: 17px;margin-top: 9px;}
+.name h6{font-size: 10px;margin-top: -12px;}
+.name{border-bottom: 1px dashed black;width: 100%;}
+.comment_bottom{margin-left: 90px;margin-top: -10px;padding-bottom: 20px;}
+.box{height: 350px;overflow: hidden scroll;}
+.vietbl{margin-top: 50px;}
+.vietbl textarea{padding: 20px;outline: none;}
+.vietbl button{margin-top: 15px;background-color: rgb(10, 179, 33);color: #FFFFFF;font-size: 15px;padding: 7px;border: none;cursor: pointer;}

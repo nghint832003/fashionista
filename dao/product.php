@@ -21,10 +21,14 @@ function delete_product($id)
     pdo_query($sql1);
 }
 
-function delete_products_detail($id_pd)
+function delete_products_detail($id_product)
 {
-    $sql = "delete from product_detail where id_pd=" . $id_pd;
+    $sql = "delete from product_detail where id_product=" . $id_product;
     pdo_query($sql);
+}
+
+function delete_product_detail($id_pd){
+    $sql = "delete from product_detail where id_pd=".$id_pd;
 }
 
 function loadall_product()
@@ -62,18 +66,19 @@ function loadone_product($id)
     return $sp;
 }
 
-function loadone_product_detail($id)
+function loadone_product_detail($id_product)
 {
-    $sql = "select * from product_detail where id_pd=" . $id;
-    $sp = pdo_query_one($sql);
+    $sql = "select * from product_detail where id_product=" . $id_product;
+
+    $sp = pdo_query($sql);
     return $sp;
 }
 
 function load_products_category($id_product, $id_category)
 {
-    $sql = "select * from san_pham where ma_loai='" . $id_category . "' AND ma_sp <> " . $id_product;
-    $listproduct = pdo_query($sql);
-    return $listproduct;
+    $sql = "select * from products where id_category='" . $id_category . "' AND id_product <> " . $id_product;
+    $listProductCategory = pdo_query($sql);
+    return $listProductCategory;
 }
 
 function update_product($id_product,$name_product, $id_category, $pic1, $pic2, $pic3, $pic4, $des_product,$price_product)

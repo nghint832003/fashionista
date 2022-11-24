@@ -19,7 +19,7 @@
                         $deleteCategory="index.php?act=deleteCategory&id_category=".$id_category;
                         echo '<tr>
                                 <th scope="row">'.$id_category.'</th>
-                                <td><img src=/upload/"'.$pic_category.'"></td>
+                                <td><img style="height: 25px" src="../../upload/category/'.$pic_category.'"></td>
                                 <td>'.$name_category.'</td>                                                       
                                 <td><a href="'.$updateCategory.'"><input type="button" value="Sửa"></a> <a href="'.$deleteCategory.'"><input type="button" value="Xóa"></a></td>
                               </tr>';

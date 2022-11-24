@@ -12,7 +12,7 @@ if (isset($_GET['act'])) {
             if(isset($_POST['addCate'])&&($_POST['addCate'])){
                 $name_category = $_POST['name_category'];
                 $filename=$_FILES['hinh']['name'];
-                $target_dir = "../upload/";
+                $target_dir = "../upload/category/";
                 $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
                 if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
                     //echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
@@ -148,10 +148,21 @@ if (isset($_GET['act'])) {
                     $name_product =$_POST['name_product'];
                     $name_category = $_POST['name_category'];
                     $search_products = search_products($name_product, $name_category);
-
                 }
                 $listProduct = loadall_product();
                 include 'product/list.php'; 
+                break;
+
+            case 'deleteAllProduct':
+                if(isset($_POST['name'])){
+                    foreach ($_POST['name'] as $value){
+                        $idProduct = $value;
+                        delete_products_detail($idProduct);
+                        delete_product($idProduct);
+                    }
+                }
+                $listProduct = loadall_product();
+                include 'product/list.php';
                 break;
 
             case 'listDetailProduct':
@@ -159,6 +170,7 @@ if (isset($_GET['act'])) {
                     $listProductDetail = load_product_detail($id_product);
                 include 'product/list_detail.php';
                 break;
+
             case 'deleteProduct':
                 if(isset($_GET['id_product'])){
                     delete_products_detail($_GET['id_product']);
@@ -242,7 +254,7 @@ if (isset($_GET['act'])) {
 
             case 'deleteProductDetail':
                 if(isset($_GET['id_pd'])){
-                    delete_products_detail($_GET['id_pd']);
+                    delete_product_detail($_GET['id_pd']);
                 }
                 $listProduct = loadall_product();
                 include 'product/list.php';
