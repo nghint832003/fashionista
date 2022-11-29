@@ -39,7 +39,7 @@ if (isset($_GET['act'])) {
 //                    $thongbao = "Thêm thành công";
 //                }
 //            }
-            include "category/add.php";
+            include "../admin/category/add.php";
             break;
         
         case 'listCategory':

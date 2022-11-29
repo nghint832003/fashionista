@@ -7,7 +7,8 @@ function insert_comment($id_customer, $id_product, $content_comment, $date_comme
 
 function loadall_comment($id_product)
 {
-    $sql = "select * from comment where 1";
+    $sql = "select customers.pic,customers.id_customer,id_product,content_comment,date_comment,customers.name_customer from comments 
+            INNER JOIN customers ON customers.id_customer = comments.id_customer where 1";
     if ($id_product > 0) $sql .= " AND id_product='" . $id_product . "'";
     $sql .= " order by id_comment desc";
     $listcomment = pdo_query($sql);

@@ -1,7 +1,7 @@
 <?php
-function insert_custom($name, $phone, $email, $address, $birthday, $user, $pass, $pic)
+function insert_custom($name, $phone, $email, $address, $birthday, $user, $pass,$pic)
 {
-    $sql = "insert into customers(name_customer, phone_customer, email_customer, address_customer, birthday_customer, user_customer, pass_customer, pic_customer) 
+    $sql = "insert into customers(name_customer, phone_customer, email_customer, address_customer, birthday_customer, user_customer, pass_customer, pic) 
     values('$name','$phone','$email','$address','$birthday','$user','$pass','$pic')";
     pdo_execute($sql);
 }

@@ -1,0 +1,50 @@
+table,tr,td,th{
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+table,tr,th,td{
+    border: none;
+}
+
+td{
+    background-color: white;
+
+}
+
+tr{
+    border-bottom: 15px solid rgba(230, 234, 241, 1);
+}
+
+table{
+    width: 70%;
+    margin-left: 30px;
+}
+
+#img{
+    width: 100px;
+    height: 100px;
+
+}
+
+td img{
+    width: 100%;
+
+}
+
+td{
+    height: 210px;
+    font-size: 20px;
+}
+
+#tt{
+    height: 30px;
+}
+
+th{
+    background-color: rgba(108, 93, 211, 1);
+    color: white;
+    border: none;
+}
+input[type=number]{width: 30px;outline: none;}

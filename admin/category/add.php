@@ -22,7 +22,7 @@
 //                    ?>
 <!--</form>-->
 <p style="text-align:center;color:green;font-size:24px">Thêm danh mục sản phẩm</p>
-<form action="/admin/index.php?act=addCategory" method="post" enctype="multipart/form-data" onsubmit="return true">
+<form action="../../../fashinista/admin/index.php?act=addCategory" method="post" enctype="multipart/form-data" onsubmit="return true">
     <div style="margin-left: 50px;">
         <div class="form-group">
             <label class="col-md-4 control-label">Mã loại</label>
